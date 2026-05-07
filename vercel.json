@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/tools/bmi-calculator/", "destination": "https://bmi.bmiio.us/", "permanent": true }
+  ]
+}
