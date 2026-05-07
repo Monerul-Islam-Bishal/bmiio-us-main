@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>bmiio.us — Free Online Tools</title>
-<meta name="description" content="Free online tools to help you solve everyday problems. BMI calculator, random number generator, and more coming soon.">
+<meta name="description" content="Free online problem-solving tools. BMI calculator, password generator, random number generator, and more coming soon. No signup, no ads, just tools.">
 <link rel="canonical" href="https://bmiio.us/">
 <meta property="og:title" content="bmiio.us — Free Online Tools">
-<meta property="og:description" content="Free online tools to help you solve everyday problems.">
+<meta property="og:description" content="Free online problem-solving tools. BMI calculator, password generator, random number generator, and more coming soon.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -23,25 +23,27 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#f5f0e8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a1a;min-height:100vh}
-.container{max-width:1000px;margin:0 auto;padding:40px 20px}
+.container{max-width:1100px;margin:0 auto;padding:40px 20px}
 .header{border:4px solid #1a1a1a;background:#fff;padding:40px;margin-bottom:40px;text-align:center}
 .header h1{font-size:3rem;font-weight:900;text-transform:uppercase;letter-spacing:-1px;margin-bottom:10px}
 .header h1 span{color:#ff3b6f}
-.header p{font-size:1.2rem;color:#555;margin-bottom:20px}
+.header p{font-size:1.2rem;color:#555;margin-bottom:16px}
 .tagline{display:inline-block;background:#ffe600;border:3px solid #1a1a1a;padding:8px 24px;font-weight:700;font-size:.9rem;text-transform:uppercase}
-.tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.tool-card{border:4px solid #1a1a1a;background:#fff;padding:30px;transition:transform .2s,box-shadow .2s}
+.section-title{border-bottom:4px solid #1a1a1a;font-size:1.3rem;font-weight:900;text-transform:uppercase;padding-bottom:8px;margin-bottom:24px}
+.tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:40px}
+.tool-card{border:4px solid #1a1a1a;background:#fff;padding:30px;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
 .tool-card:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 #1a1a1a}
-.tool-card .icon{font-size:2.5rem;margin-bottom:15px}
-.tool-card h2{font-size:1.5rem;font-weight:800;margin-bottom:8px}
-.tool-card p{color:#555;margin-bottom:15px;line-height:1.5}
+.tool-card .icon{font-size:2.5rem;margin-bottom:12px}
+.tool-card h2{font-size:1.5rem;font-weight:800;margin-bottom:6px}
+.tool-card .domain-label{font-size:.75rem;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.tool-card p{color:#555;margin-bottom:12px;line-height:1.5;flex:1}
 .tool-card .status{display:inline-block;font-size:.75rem;font-weight:700;text-transform:uppercase;padding:4px 12px;border:2px solid #1a1a1a;margin-bottom:12px}
 .tool-card .status.live{background:#00c853;color:#fff}
 .tool-card .status.coming{background:#e0e0e0;color:#666}
-.tool-card .btn{display:inline-block;background:#1a1a1a;color:#fff;padding:10px 24px;font-weight:700;text-decoration:none;border:3px solid #1a1a1a;transition:all .2s}
+.tool-card .btn{display:inline-block;background:#1a1a1a;color:#fff;padding:10px 24px;font-weight:700;text-decoration:none;border:3px solid #1a1a1a;transition:all .2s;align-self:flex-start}
 .tool-card .btn:hover{background:#ff3b6f;border-color:#ff3b6f}
-.cta-section{border:4px solid #1a1a1a;background:#1a1a1a;color:#fff;padding:40px;margin-top:40px;text-align:center}
-.cta-section h2{font-size:1.8rem;margin-bottom:10px}
+.cta-section{border:4px solid #1a1a1a;background:#1a1a1a;color:#fff;padding:40px;margin-top:20px;text-align:center}
+.cta-section h2{font-size:1.8rem;margin-bottom:8px}
 .cta-section p{color:#aaa;margin-bottom:20px}
 .cta-section .btn-white{display:inline-block;background:#ffe600;color:#1a1a1a;padding:12px 32px;font-weight:800;text-decoration:none;border:3px solid #ffe600;transition:all .2s}
 .cta-section .btn-white:hover{background:#fff;border-color:#fff}
@@ -57,11 +59,13 @@ footer{border-top:4px solid #1a1a1a;margin-top:40px;padding:20px 0;text-align:ce
     <div class="tagline">🚀 New tools launching weekly</div>
   </div>
 
+  <div class="section-title">🔧 Live Tools</div>
   <div class="tools-grid">
     <div class="tool-card">
       <div class="icon">⚖️</div>
       <div class="status live">● Live</div>
       <h2>BMI Calculator</h2>
+      <div class="domain-label">bmi.bmiio.us</div>
       <p>Calculate your Body Mass Index instantly. Metric & imperial units, BMI chart, health categories, and FAQ.</p>
       <a href="https://bmi.bmiio.us" class="btn">Use Tool →</a>
     </div>
@@ -70,22 +74,118 @@ footer{border-top:4px solid #1a1a1a;margin-top:40px;padding:20px 0;text-align:ce
       <div class="icon">🎲</div>
       <div class="status live">● Live</div>
       <h2>Random Number Generator</h2>
+      <div class="domain-label">random.bmiio.us</div>
       <p>Generate random numbers with customizable ranges, unique mode, and cryptographic security.</p>
       <a href="https://random.bmiio.us" class="btn">Use Tool →</a>
     </div>
 
     <div class="tool-card">
       <div class="icon">🔐</div>
-      <div class="status coming">Coming Next</div>
+      <div class="status live">● Live</div>
       <h2>Password Generator</h2>
-      <p>Create strong, secure passwords with customizable length, symbols, and complexity options.</p>
+      <div class="domain-label">passgen.bmiio.us</div>
+      <p>Create strong, secure passwords with customizable length, symbols, numbers, uppercase, and lowercase.</p>
+      <a href="https://passgen.bmiio.us" class="btn">Use Tool →</a>
     </div>
+  </div>
 
+  <div class="section-title">📋 Upcoming Tools</div>
+  <div class="tools-grid">
+    <div class="tool-card">
+      <div class="icon">🔑</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Strong Password Checker</h2>
+      <p>Test your password strength with real-time analysis, entropy scoring, and breach check recommendations.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">📝</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Word & Character Counter</h2>
+      <p>Count words, characters, sentences, and paragraphs in any text. Useful for writers, students, and SEO.</p>
+    </div>
     <div class="tool-card">
       <div class="icon">🔢</div>
-      <div class="status coming">Coming Soon</div>
-      <h2>More Tools</h2>
-      <p>Unit converters, text tools, calculators, and more problem-solving utilities.</p>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Number Base Converter</h2>
+      <p>Convert between binary, octal, decimal, and hexadecimal. Perfect for programmers and students.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">🌡️</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Unit Converter</h2>
+      <p>Convert between temperature, length, weight, volume, speed, and more. Quick and accurate.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">⏱️</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Time Zone Converter</h2>
+      <p>Convert times across time zones worldwide. Plan meetings, calls, and events across different cities.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">🧮</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Percentage Calculator</h2>
+      <p>Calculate percentages, discounts, tips, tax, and more. Handy for shopping and finance.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">🔤</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Base64 Encoder / Decoder</h2>
+      <p>Encode and decode text to Base64 instantly. Useful for developers and data handling.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">📐</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Age Calculator</h2>
+      <p>Calculate exact age in years, months, days, hours, and minutes from any birth date.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">📏</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Text Case Converter</h2>
+      <p>Convert text between uppercase, lowercase, title case, and camelCase instantly.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">📊</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Coin Flip / Dice Roll</h2>
+      <p>Simulate coin flips and dice rolls with true randomness. Perfect for decision making or games.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">🌐</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>IP Address Lookup</h2>
+      <p>Find your public IP address, location, ISP, and other network details.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">💱</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Currency Converter</h2>
+      <p>Convert between world currencies with live exchange rates. Display in USD, EUR, GBP, and more.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">📅</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Date Difference Calculator</h2>
+      <p>Calculate exact days, weeks, months, and years between any two dates.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">🛡️</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>UUID / GUID Generator</h2>
+      <p>Generate random UUIDs (v4) for database keys, API tokens, and unique identifiers.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">💪</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>Calorie Calculator</h2>
+      <p>Estimate daily calorie needs based on age, weight, height, sex, and activity level.</p>
+    </div>
+    <div class="tool-card">
+      <div class="icon">🔄</div>
+      <div class="status coming">⚙️ In Queue</div>
+      <h2>QR Code Generator</h2>
+      <p>Generate QR codes from text, URLs, or contact information. Download as PNG.</p>
     </div>
   </div>
 
