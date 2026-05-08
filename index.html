@@ -3,13 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>bmiio.us — Free Online Tools</title>
-<meta name="description" content="Free online problem-solving tools. BMI calculator, password generator, random number generator, and more coming soon. No signup, no ads, just tools.">
+<title>bmiio.us — Free Online Tools: BMI Calculator, Password Generator & More</title>
+<meta name="description" content="Free online tools for everyday problem-solving. Use our BMI calculator, password generator, random number generator &amp; more. No signup, no tracking, 100% free.">
 <link rel="canonical" href="https://bmiio.us/">
-<meta property="og:title" content="bmiio.us — Free Online Tools">
-<meta property="og:description" content="Free online problem-solving tools. BMI calculator, password generator, random number generator, and more coming soon.">
+<meta property="og:title" content="bmiio.us — Free Online Tools: BMI Calculator, Password Generator & More">
+<meta property="og:description" content="Free online tools for everyday problem-solving. Use our BMI calculator, password generator, random number generator & more. No signup, no tracking, 100% free.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "bmiio.us",
+  "url": "https://bmiio.us",
+  "description": "Free online tools for everyday problem-solving. BMI calculator, password generator, random number generator, and more.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://bmiio.us/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "bmiio.us Tool Suite",
+  "url": "https://bmiio.us",
+  "description": "A collection of free online problem-solving tools including BMI calculator, password generator, and random number generator.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRB36D7927"></script>
@@ -42,13 +74,38 @@ body{background:#f5f0e8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',
 .tool-card .status.coming{background:#e0e0e0;color:#666}
 .tool-card .btn{display:inline-block;background:#1a1a1a;color:#fff;padding:10px 24px;font-weight:700;text-decoration:none;border:3px solid #1a1a1a;transition:all .2s;align-self:flex-start}
 .tool-card .btn:hover{background:#ff3b6f;border-color:#ff3b6f}
+.content-block{border:4px solid #1a1a1a;background:#fff;padding:30px;margin-bottom:40px}
+.content-block h2{font-size:1.5rem;font-weight:900;text-transform:uppercase;margin-bottom:16px}
+.content-block p{color:#444;line-height:1.7;margin-bottom:12px;font-size:1.05rem}
+.content-block p:last-child{margin-bottom:0}
+.content-block ul{list-style:none;padding:0}
+.content-block ul li{padding:12px 0;border-bottom:2px solid #e8e4dc;color:#444;line-height:1.6;font-size:1.05rem}
+.content-block ul li:last-child{border-bottom:none}
+.content-block ul li strong{color:#1a1a1a}
+.popular-tools-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:0}
+.popular-tool-item{border:3px solid #1a1a1a;background:#faf8f4;padding:20px;transition:transform .2s}
+.popular-tool-item:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 #1a1a1a}
+.popular-tool-item h3{margin-bottom:6px}
+.popular-tool-item h3 a{color:#1a1a1a;text-decoration:none;font-size:1.1rem}
+.popular-tool-item h3 a:hover{color:#ff3b6f;text-decoration:underline}
+.popular-tool-item p{color:#555;font-size:.95rem;line-height:1.5}
+.faq-item{border:3px solid #1a1a1a;padding:20px;margin-bottom:16px;background:#faf8f4}
+.faq-item:last-child{margin-bottom:0}
+.faq-item h3{font-size:1.05rem;font-weight:800;margin-bottom:6px;color:#1a1a1a}
+.faq-item p{color:#555;line-height:1.6;margin:0;font-size:.95rem}
+.benefit-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:2px solid #e8e4dc}
+.benefit-item:last-child{border-bottom:none}
+.benefit-icon{font-size:1.5rem;flex-shrink:0;width:36px;text-align:center;line-height:1}
+.benefit-text{flex:1}
+.benefit-text strong{display:block;font-size:1.05rem;margin-bottom:2px}
+.benefit-text span{color:#555;font-size:.95rem;line-height:1.5}
 .cta-section{border:4px solid #1a1a1a;background:#1a1a1a;color:#fff;padding:40px;margin-top:20px;text-align:center}
 .cta-section h2{font-size:1.8rem;margin-bottom:8px}
 .cta-section p{color:#aaa;margin-bottom:20px}
 .cta-section .btn-white{display:inline-block;background:#ffe600;color:#1a1a1a;padding:12px 32px;font-weight:800;text-decoration:none;border:3px solid #ffe600;transition:all .2s}
 .cta-section .btn-white:hover{background:#fff;border-color:#fff}
 footer{border-top:4px solid #1a1a1a;margin-top:40px;padding:20px 0;text-align:center;font-size:.85rem;color:#888}
-@media(max-width:768px){.tools-grid{grid-template-columns:1fr}.header h1{font-size:2rem}.header{padding:24px}}
+@media(max-width:768px){.tools-grid{grid-template-columns:1fr}.popular-tools-grid{grid-template-columns:1fr}.header h1{font-size:2rem}.header{padding:24px}}
 </style>
 </head>
 <body>
@@ -186,6 +243,81 @@ footer{border-top:4px solid #1a1a1a;margin-top:40px;padding:20px 0;text-align:ce
       <div class="status coming">⚙️ In Queue</div>
       <h2>QR Code Generator</h2>
       <p>Generate QR codes from text, URLs, or contact information. Download as PNG.</p>
+    </div>
+  </div>
+
+  <!-- About bmiio.us -->
+  <div class="content-block">
+    <div class="section-title">ℹ️ About bmiio.us</div>
+    <p><strong>bmiio.us</strong> is a growing collection of free online tools built for everyday problem-solving. Whether you need to track your health with a <strong>BMI calculator</strong>, secure your accounts with a <strong>password generator</strong>, or pick a number with a <strong>random number generator</strong>, everything on this platform is designed to be fast, private, and completely free.</p>
+
+    <p>The idea behind bmiio.us is simple: the internet should have reliable <strong>online utilities</strong> that anyone can use without signing up, without being tracked, and without paying a cent. Too many websites bury their tools behind paywalls, intrusive ads, or account registration walls. We believe the best problem-solving tools are the ones you can access instantly — open a browser, use the tool, close the tab. That's it.</p>
+
+    <p>Every tool on bmiio.us is a <strong>no signup tool</strong>. Just click, use, and go. All computation happens entirely in your browser — nothing is sent to a server, which means your data stays private. From calculating your body mass index to generating cryptographically secure passwords to creating random numbers for games or raffles, bmiio.us aims to be your go-to destination for <strong>free online problem-solving tools</strong>.</p>
+
+    <p>New tools are added regularly based on user requests and everyday needs. If you can't find what you're looking for, we want to hear about it. bmiio.us is built for you.</p>
+  </div>
+
+  <!-- Popular Tools -->
+  <div class="content-block">
+    <div class="section-title">⭐ Popular Tools</div>
+    <div class="popular-tools-grid">
+      <div class="popular-tool-item">
+        <h3><a href="https://bmi.bmiio.us">BMI Calculator</a></h3>
+        <div class="domain-label" style="font-size:.7rem;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">bmi.bmiio.us</div>
+        <p>Track your health with our free Body Mass Index calculator. Enter your height and weight in metric or imperial units, get your BMI score instantly, and see which health category you fall into — underweight, normal, overweight, or obese. Includes a detailed BMI chart and health FAQ. <a href="https://bmi.bmiio.us" style="color:#ff3b6f;font-weight:700;">Use the BMI calculator →</a></p>
+      </div>
+      <div class="popular-tool-item">
+        <h3><a href="https://passgen.bmiio.us">Password Generator</a></h3>
+        <div class="domain-label" style="font-size:.7rem;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">passgen.bmiio.us</div>
+        <p>Create strong, secure passwords with our free password generator. Customize length, include symbols, numbers, uppercase, and lowercase letters. Each password is generated with cryptographic randomness right in your browser. Perfect for securing email accounts, social media, banking, and more. <a href="https://passgen.bmiio.us" style="color:#ff3b6f;font-weight:700;">Generate a password →</a></p>
+      </div>
+      <div class="popular-tool-item">
+        <h3><a href="https://random.bmiio.us">Random Number Generator</a></h3>
+        <div class="domain-label" style="font-size:.7rem;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">random.bmiio.us</div>
+        <p>Generate random numbers with our free random number generator. Set custom minimum and maximum ranges, enable unique mode to avoid duplicates, and benefit from cryptographically secure randomness. Ideal for raffles, giveaways, gaming, statistical sampling, and decision-making. <a href="https://random.bmiio.us" style="color:#ff3b6f;font-weight:700;">Generate random numbers →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Use bmiio.us -->
+  <div class="content-block">
+    <div class="section-title">✅ Why Use bmiio.us?</div>
+    <ul>
+      <li><strong>💰 100% Free</strong> — Every tool on bmiio.us costs nothing. No signup, no hidden fees, no credit card required. Just free online tools that work.</li>
+      <li><strong>🔒 Privacy First</strong> — All computations happen entirely in your browser. Your data never leaves your device. No servers, no storage, no tracking of what you enter.</li>
+      <li><strong>⚡ Fast & Lightweight</strong> — No bloated JavaScript frameworks, no unnecessary animations, no tracking scripts. Pages load instantly and tools respond immediately.</li>
+      <li><strong>📱 Mobile Friendly</strong> — Every tool works perfectly on any device — phone, tablet, or desktop. Responsive design means you can use bmiio.us wherever you are.</li>
+    </ul>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="content-block">
+    <div class="section-title">❓ Frequently Asked Questions</div>
+
+    <div class="faq-item">
+      <h3>Are these tools really free?</h3>
+      <p>Yes, 100%. Every tool on bmiio.us is completely free to use with no hidden charges. There are no premium tiers, no paid upgrades, and no "unlock full features" prompts. Our mission is to provide free online problem-solving tools for everyone, and that will never change.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do you store my data?</h3>
+      <p>No. All tools run entirely in your browser using client-side JavaScript. When you enter information — like your height and weight in the BMI calculator — it is processed locally on your device and never sent to any server. We do not store, log, or share any data you enter into our tools.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do you make money?</h3>
+      <p>bmiio.us is monetized through non-intrusive Google AdSense advertisements. We use ads to cover hosting and development costs while keeping the tools themselves completely free. We deliberately avoid pop-ups, auto-playing videos, and aggressive ad formats that ruin the user experience.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What tools are coming next?</h3>
+      <p>We have an exciting roadmap of upcoming online utilities, including a strong password checker, word and character counter, unit converter, time zone converter, age calculator, QR code generator, calorie calculator, and many more. Check the "Upcoming Tools" section above for the full list, and new tools launch every week.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I suggest a tool?</h3>
+      <p>Absolutely! We built bmiio.us for people like you, and we rely on user feedback to decide what to build next. If there's a free online tool you wish existed, click the "Suggest a Tool" button below and send us an email. We read every suggestion and prioritize tools that help the most people.</p>
     </div>
   </div>
 
